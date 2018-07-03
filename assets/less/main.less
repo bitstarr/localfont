@@ -1,0 +1,33 @@
+@import (reference) 'var';
+@import 'base/reset';
+
+body {
+    /* new cross OS sans font stack */
+    font: 1em/1.4 @font-stack;
+    color: @text-default;
+    background: @body-bg;
+}
+
+p + p { margin-top: 1.5em; }
+
+.article {
+    max-width: 36em;
+    margin: 5vh auto;
+
+    &__title {
+        font-size: 1.5em;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    &__source {
+        margin-top: 1ex;
+        margin-bottom: 1em;
+        font-size: .8em;
+        color: @text-quiet;
+    }
+}
+
+.hint {
+    padding-left: 1em;
+    border-left: 1em solid #fc0;
+}

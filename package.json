@@ -1,0 +1,22 @@
+{
+    "private": true,
+    "engines": {
+        "node": ">=6.0.0"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+        "grunt": "*",
+        "load-grunt-tasks": "*",
+        "grunt-contrib-watch": "*",
+        "grunt-contrib-concat": "*",
+        "grunt-contrib-uglify": "*",
+        "less": "*",
+        "grunt-contrib-less": "*",
+        "autoprefixer": "*",
+        "cssnano": "*",
+        "grunt-postcss": "*",
+        "woff2-feature-test": "*",
+        "grunt-shell": "*"
+    }
+}

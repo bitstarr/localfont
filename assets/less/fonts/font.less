@@ -1,0 +1,59 @@
+/*
+    font-display: swap;
+    @see https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display
+    You should use this prop when loading fonts the normal way.
+ */
+@font-name: 'Fira Sans Corporate';
+@font-base: 'firasans';
+@font-path: 'assets/fonts/';
+
+/* stylelint-disable function-parentheses-space-inside */
+/*
+    data:application/x-font-woff;charset=utf-8;base64,
+ */
+@font-face {
+    font-family: @font-name;
+    src: data-uri('@{font-path}@{font-base}-regular-wf.@{font-type}') format('@{font-type}');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: @font-name;
+    src: data-uri('@{font-path}@{font-base}-italic-wf.@{font-type}') format('@{font-type}');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: @font-name;
+    src: data-uri('@{font-path}@{font-base}-bold-wf.@{font-type}') format('@{font-type}');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: @font-name;
+    src: data-uri('@{font-path}@{font-base}-bolditalic-wf.@{font-type}') format('@{font-type}');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/*
+    Add some more font-weights
+@font-face {
+    font-family: @font-name;
+    src: data-uri('@{font-path}@{font-base}-light-wf.@{font-type}') format('@{font-type}');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: @font-name;
+    src: data-uri('@{font-path}@{font-base}-lightitalic-wf.@{font-type}') format('@{font-type}');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}*/
